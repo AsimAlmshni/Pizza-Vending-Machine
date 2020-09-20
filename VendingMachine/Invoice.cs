@@ -62,7 +62,7 @@ namespace VendingMachine
                         lst.Add("10 ");
                     }
                 }
-                else if (temp >= 5)
+                if (temp >= 5)
                 {
                     if (Shared.rout["5"].Amount > 0)
                     {

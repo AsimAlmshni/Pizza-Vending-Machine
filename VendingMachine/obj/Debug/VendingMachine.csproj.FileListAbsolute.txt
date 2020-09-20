@@ -5,3 +5,10 @@ C:\Users\Zayed\Desktop\VendingMachine\VendingMachine\bin\Debug\VendingMachine.ex
 C:\Users\Zayed\Desktop\VendingMachine\VendingMachine\bin\Debug\VendingMachine.pdb
 C:\Users\Zayed\Desktop\VendingMachine\VendingMachine\obj\Debug\VendingMachine.exe
 C:\Users\Zayed\Desktop\VendingMachine\VendingMachine\obj\Debug\VendingMachine.pdb
+C:\Users\Zayed\Desktop\pro\VendingMachine\bin\Debug\VendingMachine.exe.config
+C:\Users\Zayed\Desktop\pro\VendingMachine\bin\Debug\VendingMachine.exe
+C:\Users\Zayed\Desktop\pro\VendingMachine\bin\Debug\VendingMachine.pdb
+C:\Users\Zayed\Desktop\pro\VendingMachine\obj\Debug\VendingMachine.csprojAssemblyReference.cache
+C:\Users\Zayed\Desktop\pro\VendingMachine\obj\Debug\VendingMachine.csproj.CoreCompileInputs.cache
+C:\Users\Zayed\Desktop\pro\VendingMachine\obj\Debug\VendingMachine.exe
+C:\Users\Zayed\Desktop\pro\VendingMachine\obj\Debug\VendingMachine.pdb

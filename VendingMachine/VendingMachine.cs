@@ -114,8 +114,7 @@ namespace VendingMachine
         }
         public void readInput() {
             this.keyPadInput = Console.ReadLine();
-            //var temp = Convert.ToDouble(this.keyPadInput);
-            //this.keyPadInput = temp.ToString();
+
 
 
         }
