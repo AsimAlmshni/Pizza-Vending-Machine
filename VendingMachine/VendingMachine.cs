@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    internal class VendingMachine : Pizza, Prepare, Buy
+    internal class VendingMachine : Prepare, Buy
     {
         private string keyPadInput = "0";
         private double total = 0;
