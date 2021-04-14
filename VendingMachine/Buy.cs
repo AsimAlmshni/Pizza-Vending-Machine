@@ -8,7 +8,7 @@ namespace VendingMachine
 {
     public interface Buy
     {
-        void BuyPizza();
+        void BuySnack();
 
 
     }

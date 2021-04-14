@@ -9,10 +9,10 @@ namespace VendingMachine
 {
     internal class Money
     {
-        private string currencyID;
-        private string currency;
-        private string type;
-        private double amount;
+        protected string currencyID;
+        protected string currency;
+        protected string type;
+        protected double amount;
 
         internal Money(string currencyID,string currency, string type, double amount) {
             this.currencyID = currencyID;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VendingMachine
 {
-    public class Pizza
+    public class Snack
     {
         private int ID;
         private string name;
@@ -14,8 +14,8 @@ namespace VendingMachine
         private string type;
         private double price;
 
-        public Pizza() { }
-        public Pizza(string name, int count, string type, int ID, double price) {
+        public Snack() { }
+        public Snack(string name, int count, string type, int ID, double price) {
             this.name = name;
             this.count = count;
             this.type = type;

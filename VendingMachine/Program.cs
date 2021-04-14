@@ -10,12 +10,12 @@ namespace VendingMachine
     {
         static void Main(string[] args)
         {
-            VendingMachine VM = new VendingMachine();
+            SnackVendingMachine VM = new SnackVendingMachine();
             do
             {
                 VM.showItems();
                 VM.readInput();
-                VM.BuyPizza();
+                VM.BuySnack();
             } while (true);
             
         }

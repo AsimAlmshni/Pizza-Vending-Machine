@@ -16,8 +16,10 @@ namespace VendingMachine
             this.BillID = BillID;
             this.Bill = Bill;
         }
+
+
         public void ShowBill() {
-            Msgs.showMsg("Dear Customer your BillID for Order is:" + BillID + "and total Bill :" + Bill + "and your exchange is");
+            Msgs.showMsg("Dear Customer your BillID for Order is:   " + BillID + "   and total Recipt :   " + Bill + "  and your exchange is");
             exchangeCalculate(Bill);
         }
 
@@ -26,49 +28,22 @@ namespace VendingMachine
             var temp = Convert.ToDouble(Bill);
             do
             {
-                if (temp >= 100)
-                {
-                    if (Shared.rout["100"].Amount > 0)
-                    {
-                        Shared.rout["100"].Amount -= 1;
-                        temp -= 100;
-                        lst.Add("100 ");
-                    }
-                }
                 if (temp >= 50)
                 {
-                    if (Shared.rout["50"].Amount > 0)
+                    if (Shared.routNote["50"].Amount > 0)
                     {
-                        Shared.rout["50"].Amount -= 1;
+                        Shared.routNote["50"].Amount -= 1;
                         temp -= 50;
                         lst.Add("50 ");
                     }
                 }
                 if (temp >= 20)
                 {
-                    if (Shared.rout["20"].Amount > 0)
+                    if (Shared.routNote["20"].Amount > 0)
                     {
-                        Shared.rout["20"].Amount -= 1;
+                        Shared.routNote["20"].Amount -= 1;
                         temp -= 20;
                         lst.Add("20 ");
-                    }
-                }
-                if (temp >= 10)
-                {
-                    if (Shared.rout["10"].Amount > 0)
-                    {
-                        Shared.rout["10"].Amount -= 1;
-                        temp -= 10;
-                        lst.Add("10 ");
-                    }
-                }
-                if (temp >= 5)
-                {
-                    if (Shared.rout["5"].Amount > 0)
-                    {
-                        Shared.rout["5"].Amount -= 1;
-                        temp -= 5;
-                        lst.Add("5 ");
                     }
                 }
                 if (temp >= 1)
@@ -78,6 +53,33 @@ namespace VendingMachine
                         Shared.rout["1"].Amount -= 1;
                         temp -= 1;
                         lst.Add("1 ");
+                    }
+                }
+                else if (temp >= .50)
+                {
+                    if (Shared.rout["50"].Amount > 0)
+                    {
+                        Shared.rout["50"].Amount -= 1;
+                        temp -= .50;
+                        lst.Add(".50 ");
+                    }
+                }
+                else if (temp >= .20)
+                {
+                    if (Shared.rout["20"].Amount > 0)
+                    {
+                        Shared.rout["20"].Amount -= 1;
+                        temp -= .20;
+                        lst.Add(".20 ");
+                    }
+                }
+                else if (temp >= .10)
+                {
+                    if (Shared.rout["10"].Amount > 0)
+                    {
+                        Shared.rout["10"].Amount -= 1;
+                        temp -= .10;
+                        lst.Add(".10 ");
                     }
                 }
             } while (temp > 0);
